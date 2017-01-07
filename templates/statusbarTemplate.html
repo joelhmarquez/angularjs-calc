@@ -1,0 +1,29 @@
+<div>
+    <p style="float: right; display:inline; font-size: 8pt" class="text-muted">{{weather.date}}</p>
+    <p style="float: left; display:inline; font-size: 8pt" class="text-muted" data-toggle="modal" data-target="#locationModal">{{weather.city}},</p>
+    <p style="float: left; display:inline; font-size: 8pt" class="text-muted">&nbsp;{{weather.current.temp}}</p>
+</div>
+
+
+<div id="locationModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="locationModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center">Change Location</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-inline text-left">
+                    <div class="form-group">
+                        <label for="newCity">City:</label>
+                        <input type="text" style="width: 500px" class="form-control" id="newCity" ng-model="weather.city" placeholder="{{weather.city}}">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" ng-click="weather.getWeather()" data-dismiss="modal">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

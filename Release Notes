@@ -1,0 +1,44 @@
+Additions:
+	- Added second layer of scientific operators (Looks)
+
+Functionality:
+	- Can do basic math functions (add, subtract, multiply, divide, modulo)
+	- Can handle demcimal arithmetic
+	- Can handle negative numbers
+	- Can delete last entered value with backspace button
+	- Stores entered values in an array of objects holding the value and the operator immediately following it	
+	- Can clear stored values to start a new calculation	
+	- Stores history
+	- Can pull from history and restore a previously used expression
+	- Can clear history
+
+Testing: 
+	- Unit tests for controller functions
+		- Init: 100%
+		- addValue: 100%
+		- back: 100%
+		- calculate: 100%
+		- clear: 100%
+		- clearHistory: 100%
+		- restore: 100%
+
+	- Unit tests for history factory functions
+		- Init: 100%
+		- addHistory: 100%
+		- clearHistory: 100%
+
+	- Unit tests for main Factory functions
+		- checkCalculateErr: 100%
+		- checkInputErr: 100%
+		- isOperator: 100%
+		- negative: 100
+		- parseExpression: 100%
+
+	- Unit tests for math Factory functions
+		- add: 100%
+		- subtract: 100%
+		- multiply: 100%
+		- divide: 100%
+		- modulus: 100%
+		- priority: 100%
+

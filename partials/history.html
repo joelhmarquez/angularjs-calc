@@ -1,0 +1,14 @@
+<div id="history" >
+    <jm-statusbar></jm-statusbar>
+    <br>
+    <div class="text-left"  style="float: left; width: 50%; height: 150px">
+        <ul style="list-style-type:none; padding: 0" ng-repeat="done in math.history">
+            <li  title="Click to restore!" data-placement="left" data-jm-restore ng-click="math.value = done.expression; math.addValue()">{{done.expression}}</li>
+        </ul>
+        </div>
+    <div style="float: right; width: 50%; height: 150px">
+        <ul style="list-style-type:none" ng-repeat="done in math.history">
+            <li>{{done.answer}}</li>
+        </ul>
+    </div>
+</div>

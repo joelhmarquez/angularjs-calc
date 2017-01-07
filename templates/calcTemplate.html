@@ -1,0 +1,44 @@
+
+    <table class="calcTable">
+        <!--Top border Layer:-->
+        <tr id="topBar" class="bg-success">
+            <td colspan="4" ></td></tr>
+        <!--History Layer-->
+        <tr class="bg-warning">
+            <td class="pre-scrollable" colspan="4" >
+                <ng-view></ng-view>
+            </td>
+        </tr>
+        <!--Answer Layer-->
+        <tr class="bg-warning">
+            <td colspan="4" id="answer">{{math.expression}}</td>
+        </tr>
+        <!--First Button Layer-->
+        <tr class="bg-success">
+            <td><button type="button" class="btn btn-primary btn-block " id="sqrt" ng-click="math.value = '√('; math.scientific = true; math.addValue()">√</button></td><td><button type="button" class="btn btn-primary btn-block" id="openP" ng-click="math.value = '('; math.addValue()">(</button></td><td><button type="button" class="btn btn-primary btn-block" id="closeP" ng-click="math.value = ')'; math.closeParen = true; math.addValue()">)</button></td><td><button type="button" class="btn btn-primary btn-block" id="pow" ng-click="math.value = '^'; math.addValue()">^</button></td>
+        </tr>
+        <!--Second Button Layer-->
+        <tr class="bg-success">
+            <td><button type="button" class="btn btn-primary btn-block " id="sin" ng-click="math.value = 'sin('; math.scientific = true; math.addValue()">sin</button></td><td><button type="button" class="btn btn-primary btn-block" id="cos" ng-click="math.value = 'cos('; math.scientific = true; math.addValue()">cos</button></td><td><button type="button" class="btn btn-primary btn-block" id="tan" ng-click="math.value = 'tan('; math.scientific = true; math.addValue()">tan</button></td><td><button type="button" class="btn btn-danger btn-block" id="clear" ng-click="math.clear()">C</button></td>
+        </tr>
+        <!--Third Button Layer-->
+        <tr class="bg-success">
+            <td><button type="button" class="btn btn-danger btn-block" id="clearAll" ng-click="math.clearAll()">AC</button></td><td><button type="button" class="btn btn-warning btn-block" id="divide" ng-click="math.value = '/'; math.addValue()">/</button></td><td><button type="button" class="btn btn-warning btn-block" id="multiply" ng-click="math.value = '*'; math.addValue()">x</button></td><td><button type="button" class="btn btn-danger btn-block" id="back" ng-click="math.back()">←</button></td>
+        </tr>
+        <!--Fourth Button Layer-->
+        <tr class="bg-success">
+            <td><button type="button" class="btn btn-info btn-block" id="seven" ng-click="math.value = 7; math.addValue()">7</button></td><td><button type="button" class="btn btn-info btn-block" id="eight" ng-click="math.value = 8; math.addValue()">8</button></td><td><button type="button" class="btn btn-info btn-block" id="nine" ng-click="math.value = 9; math.addValue()">9</button></td><td><button type="button" class="btn btn-warning btn-block" id="mod" ng-click="math.value = '%'; math.addValue()">%</button></td>
+        </tr>
+        <!--Fifth Button Layer-->
+        <tr class="bg-success">
+            <td><button type="button" class="btn btn-info btn-block" id="four" ng-click="math.value = 4; math.addValue()">4</button></td><td><button type="button" class="btn btn-info btn-block" id="five" ng-click="math.value = 5; math.addValue()">5</button></td><td><button type="button" class="btn btn-info btn-block" id="six" ng-click="math.value = 6; math.addValue()">6</button></td><td><button type="button" class="btn btn-warning btn-block" id="plus" ng-click="math.value = '+'; math.addValue()">+</button></td>
+        </tr>
+        <!--Sixth Button Layer-->
+        <tr class="bg-success">
+            <td><button type="button" class="btn btn-info btn-block" id="one" ng-click="math.value = 1; math.addValue()">1</button></td><td><button type="button" class="btn btn-info btn-block" id="two" ng-click="math.value = 2; math.addValue()">2</button></td><td><button type="button" class="btn btn-info btn-block" id="three" ng-click="math.value = 3; math.addValue()">3</button></td><td><button type="button" class="btn btn-warning btn-block" id="minus" ng-click="math.value = '-'; math.addValue()">-</button></td>
+        </tr>
+        <!--Seventh Button Layer-->
+        <tr class="bg-success">
+            <td><button type="button" class="btn btn-info btn-block" id="zero" ng-click="math.value = 0; math.addValue()">0</button></td><td><button type="button" class="btn btn-primary btn-block" id="dot" ng-click="math.value = '.'; math.addValue()">.</button></td><td><button type="button" class="btn btn-primary btn-block" id="negative" ng-click="math.value = '-'; math.negative = true; math.addValue()">(-)</button></td><td><button type="button" class="btn btn-success btn-block" id="equal" ng-click="math.calculate()">=</button></td>
+        </tr>
+    </table>

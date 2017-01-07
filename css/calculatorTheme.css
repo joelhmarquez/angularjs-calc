@@ -1,0 +1,122 @@
+/*....................................................................................................................*/
+/*                                         General Table Properties                                                  */
+/*....................................................................................................................*/
+.calcTable {
+    width: auto;
+    height: auto;
+    position:absolute;
+    top:10%;
+    left:38%;
+}
+.calcTable td {
+    padding:5px;
+    border:outset;
+    border-color: cornflowerblue;
+    height:60px;
+    width:90px;
+    text-align:center;
+}
+.calcTable th {
+    text-align: center;
+}
+
+/*....................................................................................................................*/
+/*                                                Alignments                                                          */
+/*....................................................................................................................*/
+.centered {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#weather .paddedRight {
+    padding-right: 100px;
+}
+
+#weather .paddedLeft {
+    padding-left: 30px;
+}
+
+
+/*....................................................................................................................*/
+/*                                                Button changes                                                      */
+/*....................................................................................................................*/
+.refresh {
+
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.refresh:focus {
+    outline: 0;
+}
+
+/*....................................................................................................................*/
+/*                                                Bootstrap Mods                                                      */
+/*....................................................................................................................*/
+.tooltip.left .tooltip-arrow {
+    top: 50%;
+    right: 0;
+    margin-top: -5px;
+    border-left-color: transparent;
+    border-width: 5px 0 5px 5px;
+}
+.tooltip-inner {
+    color: #fff;
+    background-color: #8699a4;
+    border: solid 1px #fff;
+}
+
+/*....................................................................................................................*/
+/*                                                Custom Elements by Id                                               */
+/*....................................................................................................................*/
+
+#answer {
+    padding-right: 20px;
+    border-top: hidden;
+    text-align:right;
+    height:40px;
+    font-size: 14pt;
+}
+
+#getWeather {
+    display: none;
+}
+
+#loading {
+    display: flex;
+    flex-direction: column;
+}
+
+#history {
+    text-align:right;
+    height:200px;
+    font-size: 14pt;
+}
+
+#topBar{
+
+}
+
+#weather {
+    padding-top: 0;
+    text-align:left;
+    height:200px;
+    font-size: 14pt;
+}
+
+/*!* Small Devices, Tablets *!*/
+/*@media only screen and (max-width : 1000px) {*/
+    /*#topBar{*/
+        /*display: none;*/
+    /*}*/
+
+    /*.calcTable {*/
+        /*height: 100%;*/
+        /*width: 100%;*/
+        /*top:0;*/
+        /*left:0;*/
+    /*}*/
+/*}*/

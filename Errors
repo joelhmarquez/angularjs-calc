@@ -1,0 +1,4 @@
+Errors:	(2+3*(3-1))+5 Need to fix double closed parenthesis
+		      Update now error is due to double closed parenthesis not being read. It does the 3-1+5 before the rest of the inner parenthesis objects
+
+		(2+3*(3-1)) Nested parenthesis

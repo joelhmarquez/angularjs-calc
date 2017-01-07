@@ -1,0 +1,10 @@
+{"coord":{"lon":-105.02,"lat":39.61},
+  "weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01d"}],
+  "base":"cmc stations",
+  "main":{"temp":67.55,"pressure":1022,"humidity":61,"temp_min":59,"temp_max":72},
+  "wind":{"speed":4.61,"deg":357,"gust":4.63},
+  "rain":{},
+  "clouds":{"all":0},
+  "dt":1465833802,
+  "sys":{"type":3,"id":43496,"message":0.0044,"country":"US","sunrise":1465817514,"sunset":1465871346},
+  "id":5429032,"name":"Littleton","cod":200}

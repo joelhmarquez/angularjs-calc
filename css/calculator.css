@@ -1,0 +1,126 @@
+.calcTable
+{
+
+}
+.calcTable td
+{
+    padding:5px;
+    border:outset;
+    border-color: cornflowerblue;
+    width:70px;
+    text-align:center;
+}
+
+#history
+{
+    text-align:right;
+    height:200px;
+    font-size: 14pt;
+}
+#weather
+{
+    padding-top: 0;
+    text-align:left;
+    height:200px;
+    font-size: 14pt;
+}
+
+#weather .paddedRight
+{
+    padding-right: 100px;
+}
+
+#weather .paddedLeft
+{
+    padding-left: 30px;
+}
+
+.rightPad {
+    padding-right: 30px;
+}
+
+#getWeather
+{
+    display: none;
+}
+#loading
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#answer
+{
+    padding-right: 20px;
+    border-top: hidden;
+    text-align:right;
+    height:40px;
+    font-size: 14pt;
+}
+
+p
+{
+    cursor:pointer;
+}
+
+#hold
+{
+    color:#999;
+    top:7px;
+    left:5px;
+    position:relative;
+}
+
+td
+{
+    text-align: center;
+    height:60px;
+}
+
+th
+{
+    text-align: center;
+}
+
+.tooltip.left .tooltip-arrow {
+    top: 50%;
+    right: 0;
+    margin-top: -5px;
+    border-left-color: transparent;
+    border-width: 5px 0 5px 5px;
+}
+.tooltip-inner {
+    color: #fff;
+    background-color: #8699a4;
+    border: solid 1px #fff;
+}
+.centered {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-centered {
+    padding-top: 100px;
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.refresh {
+
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.refresh:focus{
+    outline: 0;
+}

@@ -1,0 +1,10 @@
+{"city":{"id":5429032,"name":"Littleton","coord":{"lon":-105.016647,"lat":39.613319},
+  "country":"US","population":0},
+  "cod":"200",
+  "message":0.0088,
+  "cnt":1,
+  "list":[{"dt":1465930800,"temp":{"day":89.15,"min":66.65,"max":92.55,"night":68.05,"eve":91.89,"morn":66.65},
+    "pressure":843.06,
+    "humidity":64,
+    "weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01d"}],
+    "speed":7.52,"deg":270,"clouds":0}]}

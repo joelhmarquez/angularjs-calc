@@ -1,0 +1,19 @@
+<!--<div id="weather" ng-init="weather.getWeather()">-->
+<div id="weather" ng-init="weather.getWeather()">
+    <div id="loading" class="centered">
+        <h3 class="text-warning">Getting Weather Information</h3>
+        <i style="font-size: 30pt" class="wi wi-spin wi-day-sunny text-warning"></i>
+    </div>
+    <div id="getWeather">
+        <jm-statusbar></jm-statusbar>
+        <br><br>
+        <div class="paddedLeft">
+            <i style="font-size: 42pt; display:inline" class="wi wi-owm-{{weather.current.font}}"></i>
+            <p style="display:inline; float: right" class="text-muted paddedRight">Current: {{weather.current.temp}}</p>
+            <br><br>
+            <p class="text-primary">&nbsp; High: {{weather.current.maxTemp}}</p>
+            <p style="display:inline" class="text-danger">&nbsp; Low: {{weather.current.minTemp}}</p>
+            <button style="font-size: 16pt; float: right; padding-right: 20px" class="wi wi-refresh refresh" ng-click="weather.refresh()"></button>
+        </div>
+    </div>
+</div>
